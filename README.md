@@ -3,16 +3,17 @@
 
 ### Homepage: [https://comic-manga-ebook.github.io](https://comic-manga-ebook.github.io)
 
-### Copyright:
-Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
-
-**If you like it I would be happy if you  [donate on checkya](https://checkya.com/1hhp2cpit9eha/payme)**
-
 
 ## About this repository:
 This is the definition of the *.ecmb file-format! It also contains a validator done in python for validating *.ecmb - files
 
 Published under [MIT License](https://choosealicense.com/licenses/mit/)
+
+**Copyright:**
+
+Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
+
+**If you like it I would be happy if you  [donate on checkya](https://checkya.com/1hhp2cpit9eha/payme)**
 
 # Definition:
 *.ecmb is basically a Zip-file containing a XML-file named "ecmb.xml" for the meta-data and all the images stored in a folder "content", organized in subfolders for using chapters. The cover-images are stored in the root of the Zip-file.
