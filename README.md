@@ -1,7 +1,7 @@
 > [!WARNING]
 > This project is still under developement, so please don't use it atm
 
-## Homepage:
+## Homepage: 
 [https://comic-manga-ebook.github.io](https://comic-manga-ebook.github.io)
 
 ### Copyright:
