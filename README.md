@@ -1,8 +1,7 @@
 > [!WARNING]
 > This project is still under developement, so please don't use it atm
 
-## Homepage: 
-[https://comic-manga-ebook.github.io](https://comic-manga-ebook.github.io)
+### Homepage: [https://comic-manga-ebook.github.io](https://comic-manga-ebook.github.io)
 
 ### Copyright:
 Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
