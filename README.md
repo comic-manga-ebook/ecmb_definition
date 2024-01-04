@@ -48,9 +48,14 @@ Unfortunately I couldn't find a possibility to validate that directly with XSD, 
 
 The **width and height** defined in the root-node **should** be the size of the images. It not exact, coz when I was building fan-translated Mangas, all images had a different size and aspect-ratio, **but** the aspect-ratio is enterly important for the validator to validate the correct placement of double-page-images `(Formula: id_double = (img_width / img_height) > (book_width / book_height * 1.5))`
 
-Use the **original**-node if the book was (fan-) translated. Its reccomended to add the authors to the original book, and leave them empty here at main meta-data.
+Use the **original**-node if the book was (fan-) translated. Its reccomended to add the authors to the original book, and leave them empty at main meta-data.
 
 If the book based on eg. a light-novel and you want to give that credit, you can place the information at the **basedon**-node.
+
+### Navigation
+Navigation is optinal. If you don’t add it the app will automaticaly generate a navigation based on the folder-structure.
+
+You can use headlines, links to images and chapters. Chapters point to folders and you have define a image to start with. This is useful if the first image of the chapter is eg a spacer-image or if there is a prolog and you want to point to the chapter's title-image if the user clicks on the chapter-link.
 
 ### Double-page-images
 Double-page-image have to be stored full and the splitted left and right part seperatly to give the reader-app more opportunities. 
