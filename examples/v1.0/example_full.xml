@@ -7,6 +7,8 @@
 		<title>The Ultimate Manga Title</title>
 		<volume>8</volume>
 		<summary>My Description</summary>
+		<pages>200</pages>
+		<notes>My first build</notes>
 		<authors>
 			<author role="Author" href="https://www.agatha-christie.org">Agatha Christie</author>
 			<author role="Co-Author" href="https://www.arthur-doyle.org">Arthur Conan Doyle</author>
@@ -77,7 +79,6 @@
 				<author role="CoverArtist" href="https://www.walt-disney.org">Walt Disney</author>
 			</authors>
 		</basedon>
-		<notes>My first build</notes>
 	</metadata>
 	<content cover_front="cover_front.jpg" cover_rear="cover_rear.jpg">
 		<dimg src="aaaa.jpg" src_left="aaaaa_left.jpg" src_right="aaaaa_right.jpg" />

@@ -1,9 +1,14 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <ecmb version="1.0" type="manga" language="en" uid="arghihahoihth6585868856865865horhju" width="900" height="1200">
 	<metadata>
+		<isbn>0123456789</isbn>
+		<publisher href="https://www.mangapublisher-inc.com">MangaPublisher Inc.</publisher>
+		<publishdate>2015-03-23</publishdate>
 		<title>The Ultimate Manga Title</title>
 		<volume>8</volume>
 		<summary>My Description</summary>
+		<pages>200</pages>
+		<notes>My first build</notes>
 		<editors>
 			<editor role="Translator" href="https://www.clemens-k.org">Clemens K.</editor>
 			<editor role="Translator" href="https://www.nora-p.org">Nora P.</editor>
