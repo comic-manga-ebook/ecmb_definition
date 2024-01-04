@@ -31,6 +31,11 @@ myfile.ecmb
 ### Allowed image-types:
 jpeg, jpg, png, webp - I would recommend to use webp
 
+### Organize the Content
+If you want to use chapters (and subchapters) in navigation you have to organize the images in folders, coz a chapter points to a folder. You can add images directly to the root as well for example the introduction, table of contents, spacer-images between the chapters, … 
+
+Chapters with an uneven page-count are supported, also double-pages on an uneven page and uneven page-count of the book …
+
 ### ecmb.xml
 All rules and requirements for "ecmb.xml" are defined in the XSD ([located here >](https://github.com/metacreature/ecmb_definition/tree/master/schema)), but unfortunately not everything:
 
@@ -43,6 +48,10 @@ Unfortunately I couldn't find a possibility to validate that directly with XSD, 
 
 The **width and height** defined in the root-node **should** be the size of the images. It not exact, coz when I was building fan-translated Mangas, all images had a different size and aspect-ratio, **but** the aspect-ratio is enterly important for the validator to validate the correct placement of double-page-images `(Formula: id_double = (img_width / img_height) > (book_width / book_height * 1.5))`
 
+Use the **original**-node if the book was (fan-) translated. Its reccomended to add the authors to the original book, and leave them empty here at main meta-data.
+
+If the book based on eg. a light-novel and you want to give that credit, you can place the information at the **basedon**-node.
+
 ### Double-page-images
 Double-page-image have to be stored full and the splitted left and right part seperatly to give the reader-app more opportunities. 
 
@@ -50,6 +59,8 @@ In the "ecmb.xml"'s content-node those images have to be linked with `<dimg src=
 
 If you link to a double-page-image in the navigation you have to address the src-attribute, and have to specify either #auto, #left or #right. eg. `<chapter label="Chapter 1" dir="/content/chap1" href="/full.jpg#left" />`. Using "#auto, #left or #right" is mandatory for double-page-images, while using this for single-page-images this is forbidden. The XSD can't check this, but of course the validator does.
 
+### Finally
+Maybe ecmblib's documentation is also helpfull for you: [https://comic-manga-ebook.github.io/ecmblib](https://comic-manga-ebook.github.io/ecmblib)
 
 # Validator
 The validator of course validates the XML first. After that it manually checks if there are dead links in the navigation (If you have an idea doing this directly in XSD, please post it here: [https://stackoverflow.com/questions/77667931/cross-validation-of-contents-in-an-xml-using-xsd](https://stackoverflow.com/questions/77667931/cross-validation-of-contents-in-an-xml-using-xsd)).
