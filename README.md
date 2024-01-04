@@ -41,7 +41,7 @@ To clarify that more: a chapter links to a folder, that the reader-app can displ
 I know its a bit complicated, but its a no-go to mix content with navigation and the programs which should build the eBook would have massive problems, if you want to place links before the content is added.
 Unfortunately I couldn't find a possibility to validate that directly with XSD, but of course the validator will check this. If you have an idea, please post it here: [https://stackoverflow.com/questions/77667931/cross-validation-of-contents-in-an-xml-using-xsd](https://stackoverflow.com/questions/77667931/cross-validation-of-contents-in-an-xml-using-xsd)
 
-The **width and height** defined in the root-node **should** be the size of the images. It not exact, coz when I was building fan-translated Mangas, all images had a different size and aspect-ratio, **but** the aspect-ratio is enterly important for the validator to validate the correct placement of double-page-images.
+The **width and height** defined in the root-node **should** be the size of the images. It not exact, coz when I was building fan-translated Mangas, all images had a different size and aspect-ratio, **but** the aspect-ratio is enterly important for the validator to validate the correct placement of double-page-images (Formula: id_double = (img_width / img_height) > (book_width / book_height * 1.5))
 
 ### Double-page-images
 Double-page-image have to be stored full and the splitted left and right part seperatly to give the reader-app more opportunities. 
