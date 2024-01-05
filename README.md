@@ -77,14 +77,13 @@ If you are doing your own library to create an *.ecmb in your prefered programmi
 ## Using the Python-Validator
 ### Installation
 - download and install Python3 [https://www.python.org/downloads/](https://www.python.org/downloads/)
-- download and install Git [https://git-scm.com/downloads](https://git-scm.com/downloads)
-- open the git-console and then
-    - clone this repositiory `git clone git@github.com:metacreature/ecmb_definition.git`
+- download or clone this repositiory
+- open the console and then
     - go to the validator-folder `cd ecmb_definition/validator/python/`
     - run `pip install -r requirements.txt`
  
 ### Using it
-- open the git-console and then
+- open the console and then
     - go to the validator-folder `cd ecmb_definition/validator/python/`
     - run `invoke validate [absolute or relative path to your file]`
 
