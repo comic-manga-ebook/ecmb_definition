@@ -29,7 +29,7 @@ Published under [MIT License](https://choosealicense.com/licenses/mit/)
 
 Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
 
-**If you like it I would be happy if you  [donate on checkya](https://checkya.com/1hhp2cpit9eha/payme)**
+**If you like it I would be happy if you  [donate on checkya](https://checkya.com/1hhp2cpit9eha/payme)**<br /><br />
 
 ## Definition
 *.ecmb is basically a Zip-file containing a XML-file named "ecmb.xml" for the meta-data and all the images stored in a folder "content", organized in subfolders for using chapters. The cover-images are stored in the root of the Zip-file.
@@ -81,14 +81,14 @@ In the "ecmb.xml"'s content-node those images have to be linked with `<dimg src=
 If you link to a double-page-image in the navigation you have to address the src-attribute, and have to specify either #auto, #left or #right. eg. `<chapter label="Chapter 1" dir="/content/chap1" href="/full.jpg#left" />`. Using "#auto, #left or #right" is mandatory for double-page-images, while using this for single-page-images this is forbidden. The XSD can't check this, but of course the validator does.
 
 ### Finally
-Maybe ecmblib's documentation is also helpfull for you: [https://comic-manga-ebook.github.io/ecmblib](https://comic-manga-ebook.github.io/ecmblib)
+Maybe ecmblib's documentation is also helpfull for you: [https://comic-manga-ebook.github.io/ecmblib](https://comic-manga-ebook.github.io/ecmblib)<br /><br />
 
 ## Validator
 The validator of course validates the XML first. After that it manually checks if there are dead links in the navigation (If you have an idea doing this directly in XSD, please post it here: [https://stackoverflow.com/questions/77667931/cross-validation-of-contents-in-an-xml-using-xsd](https://stackoverflow.com/questions/77667931/cross-validation-of-contents-in-an-xml-using-xsd)).
 If you validate a *.ecmb (you can validate a single XML-file too) the validator then checks if all images linked in content are available. Finally it will check if all double-page-images are placed correctly.
 
 ### For developers
-If you are doing your own library to create an *.ecmb in your prefered programming-language its highly recommended to validate it after the creation. My reader-app will validate it and won't display it if its invalid!
+If you are doing your own library to create an *.ecmb in your prefered programming-language its highly recommended to validate it after the creation. My reader-app will validate it and won't display it if its invalid!<br /><br />
 
 ## Using the Python-Validator
 ### Installation
