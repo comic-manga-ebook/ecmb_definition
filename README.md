@@ -3,8 +3,24 @@
 
 ### Homepage: [https://comic-manga-ebook.github.io](https://comic-manga-ebook.github.io)
 
+### Table of contents
+- [About this repository](#about-this-repository)
+- [Definition](#definition)
+  - [File-structure](#file-structure)
+  - [Allowed image-types](#allowed-image-types)
+  - [Organize the content](#organize-the-content)
+  - [ecmb.xml](#ecmbxml)
+  - [Navigation](#navigation)
+  - [Double-page-images](#double-page-images)
+  - [Finally](#finally)
+- [Validator](#validator)
+  - [For developers](#for-developers)
+- [Using the Python-Validator](#using-the-python-validator)
+  - [Installation](#installation)
+  - [Using it](#using-it)
 
-## About this repository:
+
+## About this repository
 This is the definition of the *.ecmb file-format! It also contains a validator done in python for validating *.ecmb - files
 
 Published under [MIT License](https://choosealicense.com/licenses/mit/)
@@ -15,7 +31,7 @@ Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
 
 **If you like it I would be happy if you  [donate on checkya](https://checkya.com/1hhp2cpit9eha/payme)**
 
-# Definition:
+## Definition
 *.ecmb is basically a Zip-file containing a XML-file named "ecmb.xml" for the meta-data and all the images stored in a folder "content", organized in subfolders for using chapters. The cover-images are stored in the root of the Zip-file.
 Beside the meta-data, the "ecmb.xml" contains the spine and of course a navigation which gives you many opportunities.
 ### File-structure:
@@ -31,7 +47,7 @@ myfile.ecmb
 ### Allowed image-types:
 jpeg, jpg, png, webp - I would recommend to use webp
 
-### Organize the Content
+### Organize the content
 If you want to use chapters (and subchapters) in navigation you have to organize the images in folders, coz a chapter points to a folder. You can add images directly to the root as well for example the introduction, table of contents, spacer-images between the chapters, … 
 
 Chapters with an uneven page-count are supported, also double-pages on an uneven page and uneven page-count of the book …
@@ -67,7 +83,7 @@ If you link to a double-page-image in the navigation you have to address the src
 ### Finally
 Maybe ecmblib's documentation is also helpfull for you: [https://comic-manga-ebook.github.io/ecmblib](https://comic-manga-ebook.github.io/ecmblib)
 
-# Validator
+## Validator
 The validator of course validates the XML first. After that it manually checks if there are dead links in the navigation (If you have an idea doing this directly in XSD, please post it here: [https://stackoverflow.com/questions/77667931/cross-validation-of-contents-in-an-xml-using-xsd](https://stackoverflow.com/questions/77667931/cross-validation-of-contents-in-an-xml-using-xsd)).
 If you validate a *.ecmb (you can validate a single XML-file too) the validator then checks if all images linked in content are available. Finally it will check if all double-page-images are placed correctly.
 
