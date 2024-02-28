@@ -28,6 +28,7 @@
 			<genre>Adventure</genre>
 		</genres>
 		<warnings>
+			<warning>Adult</warning>
 			<warning>Mature Themes</warning>
 			<warning>Nudity</warning>
 			<warning>Sexual Content</warning>
@@ -81,7 +82,7 @@
 		</basedon>
 	</metadata>
 	<content cover_front="cover_front.jpg" cover_rear="cover_rear.jpg">
-		<dimg src="aaaa.jpg" src_left="aaaaa_left.jpg" src_right="aaaaa_right.jpg" />
+		<dimg src="aaaa.jpg" />
 		<dir name="chapter_1">
 			<dir name="subchapter_1">
 				<dir name="subchapter_2">

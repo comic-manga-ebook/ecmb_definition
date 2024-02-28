@@ -35,7 +35,7 @@
 	</metadata>
 	<content cover_front="cover_front.jpg" cover_rear="cover_rear.jpg">
 		<dir name="chapter_1">
-			<dimg src="page1.jpg" src_left="page1_left.jpg" src_right="page1_right.jpg" />
+			<dimg src="page1.jpg" />
 			<img src="page3.jpg" />
 			<img src="page4.jpg" />
 			<img src="page5.jpg" />

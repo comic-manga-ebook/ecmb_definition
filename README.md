@@ -74,11 +74,11 @@ Navigation is optinal. If you don’t add it the app will automaticaly generate 
 You can use headlines, links to images and chapters. Chapters point to folders and you have define a image to start with. This is useful if the first image of the chapter is eg a spacer-image or if there is a prolog and you want to point to the chapter's title-image if the user clicks on the chapter-link.
 
 ### Double-page-images
-Double-page-image have to be stored full and the splitted left and right part seperatly to give the reader-app more opportunities. 
+Double-page-image have to be stored in the "dimg"-tag (`<dimg src="doublepage.jpg" />`)  while single-paged images have to be stored in the "img"-tag (`<img src="singlepage.jpg" />`)
 
-In the "ecmb.xml"'s content-node those images have to be linked with `<dimg src="full.jpg" src_left="left.jpg" src_right="right.jpg" />`. The validator will check if you did a mistake with the image-size, eg. linking a double-page-image in a normal img-tag.
+The validator will check for incorrectly positioned images.
 
-If you link to a double-page-image in the navigation you have to address the src-attribute, and have to specify either #auto, #left or #right. eg. `<chapter label="Chapter 1" dir="/content/chap1" href="/full.jpg#left" />`. Using "#auto, #left or #right" is mandatory for double-page-images, while using this for single-page-images this is forbidden. The XSD can't check this, but of course the validator does.
+If you link to a double-page-image in the navigation you have to address the src-attribute, and have to specify either #auto, #left or #right. eg. `<chapter label="Chapter 1" dir="/content/chap1" href="/doublepage.jpg#left" />`. Using "#auto, #left or #right" is mandatory for double-page-images, while using this for single-page-images this is forbidden. The XSD can't check this, but of course the validator does.
 
 ### Finally
 Maybe ecmblib's documentation is also helpfull for you: [https://comic-manga-ebook.github.io/ecmblib](https://comic-manga-ebook.github.io/ecmblib)<br /><br />
