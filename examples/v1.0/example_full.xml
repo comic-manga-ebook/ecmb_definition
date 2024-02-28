@@ -48,7 +48,7 @@
 			<warning>Drugs</warning>
 		</warnings>
 		<original>
-			<language>jp</language>
+			<language>ja</language>
 			<isbn>4321098765</isbn>
 			<publisher href="https://www.japanmangapublisher-inc.com">JapanMangaPublisher Inc.</publisher>
 			<publishdate>1990</publishdate>
@@ -65,7 +65,7 @@
 		</original>
 		<basedon>
 			<type>Lightnovel</type>
-			<language>jp</language>
+			<language>ja</language>
 			<isbn>9876543210</isbn>
 			<publisher href="https://www.novelpublisher-inc.com">NovelPublisher Inc.</publisher>
 			<publishdate>1986</publishdate>
