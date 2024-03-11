@@ -71,7 +71,7 @@ If the book based on e.g. a light-novel and you want to give that credit, you ca
 ### Navigation
 Navigation is optional. If you don’t add it the app will automatically generate a navigation based on the folder-structure.
 
-You can use headlines, links to images and chapters. Chapters point to folders and you have specify an image to start with. This is useful if the first image of the chapter is e.g. a spacer-image or if there is a prolog and you want to point to the chapter's title-image if the user clicks on the chapter-link.
+You can use headlines, links to images and chapters. Chapters point to folders and you have to specify an image to start with. This is useful if the first image of the chapter is e.g. a spacer-image or if there is a prologue and you want to point to the chapter's title-image if the user clicks on the chapter-link.
 
 ### Double-page-images
 Double-page-image have to be stored in the "dimg"-tag (`<dimg src="doublepage.jpg" />`)  while single-paged images have to be stored in the "img"-tag (`<img src="singlepage.jpg" />`)
