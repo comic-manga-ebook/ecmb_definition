@@ -32,7 +32,7 @@ Copyright (c) 2023 Clemens K. (https://github.com/metacreature)
 **If you like it, I would be happy if you  [donate on checkya](https://checkya.com/1hhp2cpit9eha/payme)**<br /><br />
 
 ## Definition
-*.ecmb is basically a Zip-file containing a XML-file named "ecmb.xml" for the meta-data and all the images stored in a folder "content", organized in subfolders for using chapters. The cover-images are stored in the root of the Zip-file.
+*.ecmb is basically a Zip-file containing an XML-file named "ecmb.xml" for the meta-data and all the images stored in a folder "content", organized in subfolders for using chapters. The cover-images are stored in the root of the Zip-file.
 Beside the meta-data, the "ecmb.xml" contains the spine and of course a navigation which gives you many opportunities.
 ### File-structure:
 ```
@@ -64,14 +64,14 @@ Unfortunately I couldn't find a possibility to validate that directly with XSD, 
 
 The **width and height** defined in the root-node **should** be the size of the images. It is not exact, coz when I was building fan-translated Mangas, all images had a different size and aspect-ratio, **but** the aspect-ratio is entirely important for the validator to validate the correct placement of double-page-images `(Formula: id_double = (img_width / img_height) > (book_width / book_height * 1.5))`
 
-Use the **original**-node if the book was (fan-) translated. it is recommended to add the authors to the original book, and leave them empty at main meta-data.
+Use the **original**-node if the book was (fan-) translated. It is recommended to add the authors to the original book, and leave them empty at main meta-data.
 
 If the book based on e.g. a light-novel and you want to give that credit, you can place the information at the **basedon**-node.
 
 ### Navigation
-Navigation is optinal. If you don’t add it the app will automatically generate a navigation based on the folder-structure.
+Navigation is optional. If you don’t add it the app will automatically generate a navigation based on the folder-structure.
 
-You can use headlines, links to images and chapters. Chapters point to folders and you have specicify a image to start with. This is useful if the first image of the chapter is e.g. a spacer-image or if there is a prolog and you want to point to the chapter's title-image if the user clicks on the chapter-link.
+You can use headlines, links to images and chapters. Chapters point to folders and you have specify an image to start with. This is useful if the first image of the chapter is e.g. a spacer-image or if there is a prolog and you want to point to the chapter's title-image if the user clicks on the chapter-link.
 
 ### Double-page-images
 Double-page-image have to be stored in the "dimg"-tag (`<dimg src="doublepage.jpg" />`)  while single-paged images have to be stored in the "img"-tag (`<img src="singlepage.jpg" />`)
@@ -88,7 +88,7 @@ The validator of course validates the XML first. After that it manually checks i
 If you validate a *.ecmb (you can validate a single XML-file too) the validator then checks if all images linked in content are available. Finally it will check if all double-page-images are placed correctly.
 
 ### For developers
-If you are doing your own library to create an *.ecmb in your prefered programming-language it is highly recommended to validate it after the creation. My reader-app will validate it and won't display it if it is invalid!<br /><br />
+If you are doing your own library to create an *.ecmb in your preferred programming-language it is highly recommended to validate it after the creation. My reader-app will validate it and won't display it if it is invalid!<br /><br />
 
 ## Using the Python-Validator
 ### Installation
