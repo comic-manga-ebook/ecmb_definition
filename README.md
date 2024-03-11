@@ -21,7 +21,7 @@
 
 
 ## About this repository
-This is the definition of the *.ecmb file-format! It also contains a validator done in python for validating *.ecmb - files
+This is the definition of the *.ecmb file-format! It also contains a validator done in python for validating *.ecmb - files.
 
 Published under [MIT License](https://choosealicense.com/licenses/mit/)
 
@@ -50,14 +50,14 @@ jpeg, jpg, png, webp - I would recommend to use webp
 ### Organize the content
 If you want to use chapters (and subchapters) in navigation you have to organize the images in folders, coz a chapter points to a folder. You can add images directly to the root as well for example the introduction, table of contents, spacer-images between the chapters, … 
 
-Chapters with an uneven page-count are supported, also double-pages on an uneven page and uneven page-count of the book …
+Chapters with an uneven page-count are supported, also double-pages on an even page and uneven page-count of the book …
 
 ### ecmb.xml
 All rules and requirements for "ecmb.xml" are defined in the XSD ([located here >](https://github.com/metacreature/ecmb_definition/tree/master/schema)), but unfortunately not everything:
 
 **The navigation-links to the contents are relative!** An example says more than 1000 words ... [go to example >](https://github.com/metacreature/ecmb_definition/blob/master/examples/v1.0/advanced_book/advanced_book.ecmb_unpacked/ecmb.xml)
 
-To clarify that more: a chapter links to a folder, that the reader-app can display which chapter you are currently reading. Of course you want to click on the chapter and the reader-app and therefore you have to provide a link to an image (href) which has to be part of the chapter. To enforce this the link to the image is relative to the chapter's folder. Btw. you can link to the 2nd image (or any you want as long its part of the chapter's folder), if eg. the first one is a spacer-image. Sub-chapters and links are also relative to its parent.
+To clarify that more: a chapter links to a folder, that the reader-app can display which chapter you are currently reading. Of course you want to click on the chapter in the reader-app and therefore you have to provide a link to an image (href) which has to be part of the chapter. To enforce this the link to the image is relative to the chapter's folder. Btw. you can link to the 2nd image (or any you want as long its part of the chapter's folder), if eg. the first one is a spacer-image. Sub-chapters and links are also relative to its parent.
 
 I know its a bit complicated, but its a no-go to mix content with navigation and the programs which should build the eBook would have massive problems, if you want to place links before the content is added.
 Unfortunately I couldn't find a possibility to validate that directly with XSD, but of course the validator will check this. If you have an idea, please post it here: [https://stackoverflow.com/questions/77667931/cross-validation-of-contents-in-an-xml-using-xsd](https://stackoverflow.com/questions/77667931/cross-validation-of-contents-in-an-xml-using-xsd)
