@@ -93,7 +93,7 @@ If you are doing your own library to create an *.ecmb in your preferred programm
 ## Using the Python-Validator
 ### Installation
 - download and install Python3 [https://www.python.org/downloads/](https://www.python.org/downloads/)
-- download or clone this repositiory
+- download or clone this repository
 - open the console and then
     - go to the validator-folder `cd ecmb_definition/validator/python/`
     - run `pip install -r requirements.txt`
