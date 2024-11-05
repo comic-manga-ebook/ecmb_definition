@@ -1,4 +1,4 @@
-##*.ecmb - The new Comic-Manga-eBook 
+## *.ecmb - The new Comic-Manga-eBook 
 
 ### Homepage: [https://github.com/comic-manga-ebook/](https://github.com/comic-manga-ebook/)
 
